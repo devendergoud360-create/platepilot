@@ -340,6 +340,7 @@ input:focus, select:focus { outline: 2px solid var(--accent); border-color: tran
 .mess-form { display: flex; gap: 10px; flex-wrap: wrap; }
 .mess-form input { flex: 1; min-width: 220px; }
 #messResult { margin-top: 14px; display: grid; gap: 10px; }
+#messResult[hidden] { display: none !important; }
 .mess-pick, .supp-pick {
   background: var(--panel2);
   border: 1px solid var(--border);
@@ -377,6 +378,9 @@ input:focus, select:focus { outline: 2px solid var(--accent); border-color: tran
   place-items: center;
   z-index: 50;
   padding: 20px;
+}
+.modal[hidden] {
+  display: none !important;
 }
 .modal-card {
   background: var(--panel);
