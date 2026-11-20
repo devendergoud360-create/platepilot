@@ -1,0 +1,2814 @@
+[
+  {
+    "id": 1,
+    "name": "Egg Bhurji & Roti",
+    "type": "breakfast",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 445,
+    "protein": 22,
+    "carbs": 40,
+    "fat": 18,
+    "cost": 35,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 14
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Chop onion & tomato. Heat oil, sauté onion, add tomatoes. Scramble eggs in, season with salt & chili. Serve with hot rotis.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 2,
+    "name": "Peanut Butter Toast & Banana",
+    "type": "breakfast",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "quick",
+      "budget"
+    ],
+    "kcal": 403,
+    "protein": 16,
+    "carbs": 53,
+    "fat": 14,
+    "cost": 22,
+    "prepMin": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Bread",
+        "qty": 2,
+        "unit": "slices",
+        "cost": 8
+      },
+      {
+        "name": "Peanut Butter",
+        "qty": 1,
+        "unit": "tbsp",
+        "cost": 6
+      },
+      {
+        "name": "Banana",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Milk",
+        "qty": 100,
+        "unit": "ml",
+        "cost": 3
+      }
+    ],
+    "recipe": "Toast bread, spread peanut butter, top with sliced banana. Drink warm milk.",
+    "category": "bread",
+    "proteinSource": "Peanut Butter",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 3,
+    "name": "Masala Oats with Milk",
+    "type": "breakfast",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "kcal": 339,
+    "protein": 12,
+    "carbs": 51,
+    "fat": 8,
+    "cost": 25,
+    "prepMin": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Oats",
+        "qty": 40,
+        "unit": "g",
+        "cost": 12
+      },
+      {
+        "name": "Milk",
+        "qty": 150,
+        "unit": "ml",
+        "cost": 5
+      },
+      {
+        "name": "Banana",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Sugar",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 1
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Boil milk, stir in oats, cook 3 min. Add sliced banana & sugar. Serve hot.",
+    "category": "grains",
+    "proteinSource": "Milk",
+    "carbSource": "Oats"
+  },
+  {
+    "id": 4,
+    "name": "Besan Chilla with Chutney",
+    "type": "breakfast",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "high-protein",
+      "budget"
+    ],
+    "kcal": 371,
+    "protein": 16,
+    "carbs": 42,
+    "fat": 12,
+    "cost": 18,
+    "prepMin": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Besan (Gram Flour)",
+        "qty": 50,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Green Chili",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Coriander",
+        "qty": 2,
+        "unit": "leaves",
+        "cost": 1
+      }
+    ],
+    "recipe": "Mix besan with water, chopped onion, chili, salt. Pour on hot tawa, cook both sides. Serve with chutney.",
+    "category": "legumes",
+    "proteinSource": "Besan",
+    "carbSource": "Besan"
+  },
+  {
+    "id": 5,
+    "name": "Upma with Vegetables",
+    "type": "breakfast",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 360,
+    "protein": 9,
+    "carbs": 58,
+    "fat": 10,
+    "cost": 16,
+    "prepMin": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Rava (Semolina)",
+        "qty": 50,
+        "unit": "g",
+        "cost": 7
+      },
+      {
+        "name": "Carrot",
+        "qty": 1,
+        "unit": "small",
+        "cost": 4
+      },
+      {
+        "name": "Peas",
+        "qty": 20,
+        "unit": "g",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Dry roast rava. Temper mustard seeds in oil, sauté veggies, add water, boil, stir in rava. Cook covered.",
+    "category": "grains",
+    "proteinSource": "Rava",
+    "carbSource": "Rava"
+  },
+  {
+    "id": 6,
+    "name": "Poha with Peanuts",
+    "type": "breakfast",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "quick",
+      "budget"
+    ],
+    "kcal": 350,
+    "protein": 9,
+    "carbs": 58,
+    "fat": 9,
+    "cost": 15,
+    "prepMin": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Poha",
+        "qty": 50,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Peanuts",
+        "qty": 15,
+        "unit": "g",
+        "cost": 4
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Lemon",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      }
+    ],
+    "recipe": "Rinse poha. Temper mustard, sauté onion, add poha, salt, lemon juice. Top with roasted peanuts.",
+    "category": "grains",
+    "proteinSource": "Peanuts",
+    "carbSource": "Poha"
+  },
+  {
+    "id": 7,
+    "name": "Sprouts Chaat",
+    "type": "breakfast",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "high-protein",
+      "budget"
+    ],
+    "kcal": 297,
+    "protein": 15,
+    "carbs": 40,
+    "fat": 6,
+    "cost": 14,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Moong Sprouts",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Tomato",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Lemon",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Chaat Masala",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Coriander",
+        "qty": 2,
+        "unit": "leaves",
+        "cost": 1
+      }
+    ],
+    "recipe": "Steam sprouts lightly. Mix with chopped onion, tomato, lemon, chaat masala. Garnish coriander.",
+    "category": "legumes",
+    "proteinSource": "Moong Sprouts",
+    "carbSource": "Moong Sprouts"
+  },
+  {
+    "id": 8,
+    "name": "Idli Sambar (2 pcs)",
+    "type": "breakfast",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 329,
+    "protein": 10,
+    "carbs": 61,
+    "fat": 4,
+    "cost": 20,
+    "prepMin": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Idli Batter",
+        "qty": 150,
+        "unit": "g",
+        "cost": 12
+      },
+      {
+        "name": "Sambar",
+        "qty": 100,
+        "unit": "ml",
+        "cost": 6
+      },
+      {
+        "name": "Coconut Chutney",
+        "qty": 30,
+        "unit": "g",
+        "cost": 2
+      }
+    ],
+    "recipe": "Steam batter in idli moulds for 10 min. Serve with hot sambar & chutney.",
+    "category": "grains",
+    "proteinSource": "Idli Batter",
+    "carbSource": "Idli Batter"
+  },
+  {
+    "id": 9,
+    "name": "Bread Omelette",
+    "type": "breakfast",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein",
+      "quick"
+    ],
+    "kcal": 424,
+    "protein": 20,
+    "carbs": 38,
+    "fat": 18,
+    "cost": 24,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 14
+      },
+      {
+        "name": "Bread",
+        "qty": 2,
+        "unit": "slices",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Beat eggs with onion & salt. Cook omelette, place bread slices on top, fold. Serve hot.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 10,
+    "name": "Ragi Porridge",
+    "type": "breakfast",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "budget",
+      "healthy"
+    ],
+    "kcal": 307,
+    "protein": 10,
+    "carbs": 55,
+    "fat": 5,
+    "cost": 12,
+    "prepMin": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Ragi Flour",
+        "qty": 30,
+        "unit": "g",
+        "cost": 5
+      },
+      {
+        "name": "Milk",
+        "qty": 100,
+        "unit": "ml",
+        "cost": 3
+      },
+      {
+        "name": "Jaggery",
+        "qty": 10,
+        "unit": "g",
+        "cost": 2
+      },
+      {
+        "name": "Banana",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 3
+      }
+    ],
+    "recipe": "Cook ragi flour with water, add milk & jaggery. Top with banana slices.",
+    "category": "grains",
+    "proteinSource": "Ragi",
+    "carbSource": "Ragi"
+  },
+  {
+    "id": 11,
+    "name": "Dal Tadka & Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "classic",
+      "budget"
+    ],
+    "kcal": 528,
+    "protein": 18,
+    "carbs": 86,
+    "fat": 10,
+    "cost": 30,
+    "prepMin": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "qty": 50,
+        "unit": "g",
+        "cost": 10
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Cumin Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      },
+      {
+        "name": "Turmeric",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Boil dal with turmeric. Temper cumin, onion, tomato in oil. Pour over dal. Serve with steamed rice.",
+    "category": "legumes",
+    "proteinSource": "Toor Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 12,
+    "name": "Soya Chunks Curry & Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 572,
+    "protein": 32,
+    "carbs": 77,
+    "fat": 12,
+    "cost": 40,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Soya Chunks",
+        "qty": 50,
+        "unit": "g",
+        "cost": 15
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 3
+      }
+    ],
+    "recipe": "Boil soya chunks, squeeze. Sauté onion, ginger-garlic, tomato, spices. Add soya, simmer. Serve with rice.",
+    "category": "legumes",
+    "proteinSource": "Soya Chunks",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 13,
+    "name": "Rajma Masala & Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "protein"
+    ],
+    "kcal": 550,
+    "protein": 20,
+    "carbs": 88,
+    "fat": 10,
+    "cost": 35,
+    "prepMin": 40,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Rajma",
+        "qty": 60,
+        "unit": "g",
+        "cost": 14
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 3
+      }
+    ],
+    "recipe": "Soak & boil rajma. Sauté masala base, add rajma, simmer 10 min. Serve with rice.",
+    "category": "legumes",
+    "proteinSource": "Rajma",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 14,
+    "name": "Chole & Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 539,
+    "protein": 19,
+    "carbs": 86,
+    "fat": 11,
+    "cost": 32,
+    "prepMin": 40,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Chana (Chickpeas)",
+        "qty": 60,
+        "unit": "g",
+        "cost": 12
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 3
+      }
+    ],
+    "recipe": "Boil chana. Cook onion-tomato masala with spices, add chana, simmer. Serve with rice.",
+    "category": "legumes",
+    "proteinSource": "Chana",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 15,
+    "name": "Egg Curry & Rice",
+    "type": "lunch",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 583,
+    "protein": 26,
+    "carbs": 75,
+    "fat": 18,
+    "cost": 38,
+    "prepMin": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 3,
+        "unit": "pcs",
+        "cost": 21
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Boil & peel eggs. Sauté onion-tomato gravy, add eggs, simmer. Serve with rice.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 16,
+    "name": "Paneer Bhurji & Roti",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 561,
+    "protein": 24,
+    "carbs": 57,
+    "fat": 22,
+    "cost": 45,
+    "prepMin": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "qty": 80,
+        "unit": "g",
+        "cost": 28
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Crumble paneer. Sauté onion-tomato, add paneer & spices, cook 5 min. Serve with rotis.",
+    "category": "dairy",
+    "proteinSource": "Paneer",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 17,
+    "name": "Sambar & Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 495,
+    "protein": 15,
+    "carbs": 86,
+    "fat": 9,
+    "cost": 24,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "qty": 40,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Drumstick",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Sambar Powder",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Tamarind",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Cook dal & veggies, add sambar powder & tamarind. Temper & pour over. Serve with rice.",
+    "category": "legumes",
+    "proteinSource": "Toor Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 18,
+    "name": "Curd Rice",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "quick",
+      "budget"
+    ],
+    "kcal": 462,
+    "protein": 12,
+    "carbs": 75,
+    "fat": 10,
+    "cost": 20,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Curd",
+        "qty": 150,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Curry Leaves",
+        "qty": 3,
+        "unit": "leaves",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Ginger",
+        "qty": 1,
+        "unit": "piece",
+        "cost": 1
+      }
+    ],
+    "recipe": "Mix cooked rice with curd. Temper mustard & curry leaves, mix in. Add salt.",
+    "category": "grains",
+    "proteinSource": "Curd",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 19,
+    "name": "Jeera Rice & Dal Fry",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "classic"
+    ],
+    "kcal": 517,
+    "protein": 17,
+    "carbs": 84,
+    "fat": 11,
+    "cost": 28,
+    "prepMin": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Toor Dal",
+        "qty": 45,
+        "unit": "g",
+        "cost": 9
+      },
+      {
+        "name": "Cumin Seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 1
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Tomato",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      }
+    ],
+    "recipe": "Cook rice with cumin tempering. Make dal fry with onion-tomato. Serve together.",
+    "category": "grains",
+    "proteinSource": "Toor Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 20,
+    "name": "Aloo Gobi & Roti",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 473,
+    "protein": 12,
+    "carbs": 73,
+    "fat": 14,
+    "cost": 25,
+    "prepMin": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Cauliflower",
+        "qty": 100,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Chop potato & cauliflower. Sauté with spices until cooked. Serve with rotis.",
+    "category": "vegetables",
+    "proteinSource": "Potato",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 21,
+    "name": "Chicken Curry & Rice",
+    "type": "lunch",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 638,
+    "protein": 38,
+    "carbs": 72,
+    "fat": 20,
+    "cost": 55,
+    "prepMin": 40,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "qty": 100,
+        "unit": "g",
+        "cost": 35
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      }
+    ],
+    "recipe": "Marinate chicken with spices. Sauté onion, ginger-garlic, tomato. Add chicken, cook till done. Serve with rice.",
+    "category": "meat",
+    "proteinSource": "Chicken",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 22,
+    "name": "Fish Fry & Rice",
+    "type": "lunch",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 594,
+    "protein": 32,
+    "carbs": 68,
+    "fat": 18,
+    "cost": 50,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Fish",
+        "qty": 100,
+        "unit": "g",
+        "cost": 30
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Lemon",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Chili Powder",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Oil",
+        "qty": 2,
+        "unit": "tsp",
+        "cost": 4
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Marinate fish with chili, salt, lemon. Shallow fry till crisp. Serve with rice.",
+    "category": "meat",
+    "proteinSource": "Fish",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 23,
+    "name": "Moong Dal Khichdi & Curd",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "comfort",
+      "budget"
+    ],
+    "kcal": 506,
+    "protein": 18,
+    "carbs": 79,
+    "fat": 11,
+    "cost": 26,
+    "prepMin": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Moong Dal",
+        "qty": 40,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Rice",
+        "qty": 60,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Curd",
+        "qty": 80,
+        "unit": "g",
+        "cost": 5
+      },
+      {
+        "name": "Ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Cumin Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      },
+      {
+        "name": "Turmeric",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Ginger",
+        "qty": 1,
+        "unit": "piece",
+        "cost": 1
+      }
+    ],
+    "recipe": "Cook dal & rice with turmeric & ginger. Temper cumin in ghee, mix. Serve with curd.",
+    "category": "grains",
+    "proteinSource": "Moong Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 24,
+    "name": "Pav Bhaji",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "popular"
+    ],
+    "kcal": 550,
+    "protein": 14,
+    "carbs": 86,
+    "fat": 16,
+    "cost": 32,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Pav",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 8
+      },
+      {
+        "name": "Potato",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 8
+      },
+      {
+        "name": "Tomato",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 6
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Butter",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Pav Bhaji Masala",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Boil & mash veggies. Sauté onion, tomato, masala, add mash, cook. Serve with buttered pav.",
+    "category": "grains",
+    "proteinSource": "Potato",
+    "carbSource": "Pav"
+  },
+  {
+    "id": 25,
+    "name": "Veg Pulao & Raita",
+    "type": "lunch",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "variety"
+    ],
+    "kcal": 517,
+    "protein": 14,
+    "carbs": 81,
+    "fat": 14,
+    "cost": 30,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Carrot",
+        "qty": 1,
+        "unit": "small",
+        "cost": 4
+      },
+      {
+        "name": "Peas",
+        "qty": 30,
+        "unit": "g",
+        "cost": 4
+      },
+      {
+        "name": "Beans",
+        "qty": 30,
+        "unit": "g",
+        "cost": 4
+      },
+      {
+        "name": "Curd",
+        "qty": 80,
+        "unit": "g",
+        "cost": 5
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 3
+      }
+    ],
+    "recipe": "Sauté veggies & spices, add rice & water, cook covered. Serve with curd raita.",
+    "category": "grains",
+    "proteinSource": "Peas",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 26,
+    "name": "Lemon Rice",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "quick",
+      "budget"
+    ],
+    "kcal": 462,
+    "protein": 9,
+    "carbs": 77,
+    "fat": 12,
+    "cost": 18,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Lemon",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 3
+      },
+      {
+        "name": "Peanuts",
+        "qty": 15,
+        "unit": "g",
+        "cost": 4
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Curry Leaves",
+        "qty": 3,
+        "unit": "leaves",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Temper mustard, curry leaves, peanuts in oil. Mix with cooked rice & lemon juice.",
+    "category": "grains",
+    "proteinSource": "Peanuts",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 27,
+    "name": "Mixed Veg Sabzi & Roti",
+    "type": "lunch",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 451,
+    "protein": 12,
+    "carbs": 68,
+    "fat": 13,
+    "cost": 24,
+    "prepMin": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Mixed Vegetables",
+        "qty": 150,
+        "unit": "g",
+        "cost": 12
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Chop mixed veggies. Sauté with spices, cover-cook till soft. Serve with rotis.",
+    "category": "vegetables",
+    "proteinSource": "Mixed Vegetables",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 28,
+    "name": "Egg Fried Rice",
+    "type": "lunch",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "quick",
+      "high-protein"
+    ],
+    "kcal": 572,
+    "protein": 24,
+    "carbs": 70,
+    "fat": 18,
+    "cost": 32,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 14
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Carrot",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 2
+      },
+      {
+        "name": "Beans",
+        "qty": 30,
+        "unit": "g",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Soy Sauce",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Scramble eggs, set aside. Stir-fry veggies, add rice, eggs, soy sauce. Toss well.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 29,
+    "name": "Dal Khichdi (Comfort Bowl)",
+    "type": "dinner",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "comfort",
+      "budget"
+    ],
+    "kcal": 473,
+    "protein": 17,
+    "carbs": 75,
+    "fat": 10,
+    "cost": 25,
+    "prepMin": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "qty": 30,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Rice",
+        "qty": 60,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Cumin Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      },
+      {
+        "name": "Turmeric",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Ginger",
+        "qty": 1,
+        "unit": "piece",
+        "cost": 1
+      },
+      {
+        "name": "Vegetables",
+        "qty": 50,
+        "unit": "g",
+        "cost": 8
+      }
+    ],
+    "recipe": "Cook dal, rice & veggies with turmeric. Temper cumin & ginger in ghee, mix in.",
+    "category": "grains",
+    "proteinSource": "Toor Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 30,
+    "name": "Dal Khichdi & Curd",
+    "type": "dinner",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "comfort",
+      "budget"
+    ],
+    "kcal": 517,
+    "protein": 19,
+    "carbs": 79,
+    "fat": 12,
+    "cost": 30,
+    "prepMin": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Moong Dal",
+        "qty": 35,
+        "unit": "g",
+        "cost": 7
+      },
+      {
+        "name": "Rice",
+        "qty": 60,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Curd",
+        "qty": 100,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      },
+      {
+        "name": "Cumin Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      },
+      {
+        "name": "Vegetables",
+        "qty": 50,
+        "unit": "g",
+        "cost": 7
+      }
+    ],
+    "recipe": "Cook khichdi soft. Serve topped with ghee & a bowl of curd.",
+    "category": "grains",
+    "proteinSource": "Moong Dal",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 31,
+    "name": "Roti & Sabzi (Aloo)",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 440,
+    "protein": 11,
+    "carbs": 66,
+    "fat": 13,
+    "cost": 20,
+    "prepMin": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Wheat Roti",
+        "qty": 3,
+        "unit": "pcs",
+        "cost": 15
+      },
+      {
+        "name": "Potato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Make potato sabzi with spices. Serve with 3 hot rotis.",
+    "category": "grains",
+    "proteinSource": "Wheat Roti",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 32,
+    "name": "Omelette & Toast",
+    "type": "dinner",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "quick",
+      "high-protein"
+    ],
+    "kcal": 462,
+    "protein": 22,
+    "carbs": 37,
+    "fat": 20,
+    "cost": 26,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 14
+      },
+      {
+        "name": "Bread",
+        "qty": 2,
+        "unit": "slices",
+        "cost": 8
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Beat eggs with onion. Cook omelette, toast bread. Serve together.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 33,
+    "name": "Curd Rice & Pickle",
+    "type": "dinner",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "light",
+      "budget"
+    ],
+    "kcal": 440,
+    "protein": 11,
+    "carbs": 73,
+    "fat": 10,
+    "cost": 18,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Curd",
+        "qty": 150,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Curry Leaves",
+        "qty": 3,
+        "unit": "leaves",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Mix rice with curd, temper & salt. Serve with pickle.",
+    "category": "grains",
+    "proteinSource": "Curd",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 34,
+    "name": "Peanut Chutney & Roti",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 451,
+    "protein": 15,
+    "carbs": 61,
+    "fat": 15,
+    "cost": 19,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Peanuts",
+        "qty": 30,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Garlic",
+        "qty": 2,
+        "unit": "cloves",
+        "cost": 1
+      },
+      {
+        "name": "Chili",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Roast peanuts, grind with garlic & chili. Serve chutney with rotis.",
+    "category": "legumes",
+    "proteinSource": "Peanuts",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 35,
+    "name": "Veg Poha (Light Dinner)",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "light",
+      "quick"
+    ],
+    "kcal": 385,
+    "protein": 8,
+    "carbs": 64,
+    "fat": 10,
+    "cost": 15,
+    "prepMin": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Poha",
+        "qty": 50,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Peas",
+        "qty": 20,
+        "unit": "g",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Lemon",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      }
+    ],
+    "recipe": "Rinse poha. Temper mustard, sauté onion & peas, mix poha, lemon.",
+    "category": "grains",
+    "proteinSource": "Peas",
+    "carbSource": "Poha"
+  },
+  {
+    "id": 36,
+    "name": "Besan Curry & Rice",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget"
+    ],
+    "kcal": 495,
+    "protein": 16,
+    "carbs": 77,
+    "fat": 12,
+    "cost": 24,
+    "prepMin": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Besan (Gram Flour)",
+        "qty": 40,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Rice",
+        "qty": 80,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Make besan dumplings, simmer in onion-tomato gravy. Serve with rice.",
+    "category": "legumes",
+    "proteinSource": "Besan",
+    "carbSource": "Rice"
+  },
+  {
+    "id": 37,
+    "name": "Soya Chapati Roll",
+    "type": "dinner",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "high-protein",
+      "quick"
+    ],
+    "kcal": 506,
+    "protein": 26,
+    "carbs": 57,
+    "fat": 16,
+    "cost": 30,
+    "prepMin": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Soya Chunks",
+        "qty": 40,
+        "unit": "g",
+        "cost": 12
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 3
+      },
+      {
+        "name": "Curd",
+        "qty": 30,
+        "unit": "g",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Cook spiced soya keema. Roll in rotis with onion & curd.",
+    "category": "legumes",
+    "proteinSource": "Soya Chunks",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 38,
+    "name": "Chana Masala & Roti",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "protein"
+    ],
+    "kcal": 517,
+    "protein": 20,
+    "carbs": 75,
+    "fat": 13,
+    "cost": 28,
+    "prepMin": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Chana (Chickpeas)",
+        "qty": 50,
+        "unit": "g",
+        "cost": 10
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Spices",
+        "qty": 1,
+        "unit": "mix",
+        "cost": 1
+      }
+    ],
+    "recipe": "Boil chana. Cook masala, add chana, simmer. Serve with rotis.",
+    "category": "legumes",
+    "proteinSource": "Chana",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 39,
+    "name": "Egg Curry & Roti",
+    "type": "dinner",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 550,
+    "protein": 26,
+    "carbs": 53,
+    "fat": 22,
+    "cost": 36,
+    "prepMin": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 3,
+        "unit": "pcs",
+        "cost": 21
+      },
+      {
+        "name": "Wheat Roti",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Onion",
+        "qty": 1,
+        "unit": "small",
+        "cost": 5
+      },
+      {
+        "name": "Tomato",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Boil eggs. Make onion-tomato gravy, add eggs. Serve with rotis.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Wheat Roti"
+  },
+  {
+    "id": 40,
+    "name": "Vegetable Soup & Toast",
+    "type": "dinner",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "light"
+    ],
+    "kcal": 330,
+    "protein": 9,
+    "carbs": 46,
+    "fat": 10,
+    "cost": 16,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Mixed Vegetables",
+        "qty": 100,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Bread",
+        "qty": 1,
+        "unit": "slice",
+        "cost": 4
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Pepper",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 1
+      }
+    ],
+    "recipe": "Boil veggies, blend coarse, season. Serve with toasted bread.",
+    "category": "vegetables",
+    "proteinSource": "Mixed Vegetables",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 41,
+    "name": "Roasted Chana & Tea",
+    "type": "snack",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "budget",
+      "high-protein"
+    ],
+    "kcal": 180,
+    "protein": 9,
+    "carbs": 24,
+    "fat": 5,
+    "cost": 12,
+    "prepMin": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Roasted Chana",
+        "qty": 40,
+        "unit": "g",
+        "cost": 8
+      },
+      {
+        "name": "Tea",
+        "qty": 1,
+        "unit": "cup",
+        "cost": 3
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Chili Powder",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Mix roasted chana with salt & chili. Brew tea. Enjoy together.",
+    "category": "legumes",
+    "proteinSource": "Roasted Chana",
+    "carbSource": "Roasted Chana"
+  },
+  {
+    "id": 42,
+    "name": "Peanut Butter Sandwich",
+    "type": "snack",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "kcal": 320,
+    "protein": 13,
+    "carbs": 36,
+    "fat": 14,
+    "cost": 16,
+    "prepMin": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Bread",
+        "qty": 2,
+        "unit": "slices",
+        "cost": 8
+      },
+      {
+        "name": "Peanut Butter",
+        "qty": 1,
+        "unit": "tbsp",
+        "cost": 6
+      },
+      {
+        "name": "Banana",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 3
+      }
+    ],
+    "recipe": "Spread peanut butter on bread, add banana slices, sandwich it.",
+    "category": "bread",
+    "proteinSource": "Peanut Butter",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 43,
+    "name": "Fruit Bowl & Curd",
+    "type": "snack",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "light",
+      "healthy"
+    ],
+    "kcal": 200,
+    "protein": 6,
+    "carbs": 38,
+    "fat": 3,
+    "cost": 18,
+    "prepMin": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Apple",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 10
+      },
+      {
+        "name": "Curd",
+        "qty": 50,
+        "unit": "g",
+        "cost": 3
+      }
+    ],
+    "recipe": "Chop fruits, top with a spoon of curd.",
+    "category": "fruits",
+    "proteinSource": "Curd",
+    "carbSource": "Banana"
+  },
+  {
+    "id": 44,
+    "name": "Moong Sprouts Chaat",
+    "type": "snack",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "high-protein",
+      "budget"
+    ],
+    "kcal": 170,
+    "protein": 11,
+    "carbs": 24,
+    "fat": 3,
+    "cost": 10,
+    "prepMin": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Moong Sprouts",
+        "qty": 60,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Onion",
+        "qty": 0.5,
+        "unit": "small",
+        "cost": 2
+      },
+      {
+        "name": "Lemon",
+        "qty": 0.5,
+        "unit": "pcs",
+        "cost": 2
+      },
+      {
+        "name": "Chaat Masala",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Mix sprouts with onion, lemon, chaat masala.",
+    "category": "legumes",
+    "proteinSource": "Moong Sprouts",
+    "carbSource": "Moong Sprouts"
+  },
+  {
+    "id": 45,
+    "name": "Banana Milkshake",
+    "type": "snack",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "kcal": 220,
+    "protein": 8,
+    "carbs": 36,
+    "fat": 5,
+    "cost": 14,
+    "prepMin": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "qty": 1,
+        "unit": "pcs",
+        "cost": 5
+      },
+      {
+        "name": "Milk",
+        "qty": 150,
+        "unit": "ml",
+        "cost": 5
+      },
+      {
+        "name": "Sugar",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 1
+      },
+      {
+        "name": "Peanut Butter",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 3
+      }
+    ],
+    "recipe": "Blend banana, milk, sugar & peanut butter till smooth.",
+    "category": "fruits",
+    "proteinSource": "Milk",
+    "carbSource": "Banana"
+  },
+  {
+    "id": 46,
+    "name": "Buttermilk & Biscuits",
+    "type": "snack",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "light",
+      "budget"
+    ],
+    "kcal": 210,
+    "protein": 6,
+    "carbs": 30,
+    "fat": 8,
+    "cost": 10,
+    "prepMin": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Curd",
+        "qty": 100,
+        "unit": "g",
+        "cost": 5
+      },
+      {
+        "name": "Biscuits",
+        "qty": 4,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Cumin Powder",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Whisk curd with water, salt & cumin. Serve chilled with biscuits.",
+    "category": "dairy",
+    "proteinSource": "Curd",
+    "carbSource": "Biscuits"
+  },
+  {
+    "id": 47,
+    "name": "Makhana Roasted Snack",
+    "type": "snack",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "healthy"
+    ],
+    "kcal": 160,
+    "protein": 5,
+    "carbs": 24,
+    "fat": 6,
+    "cost": 15,
+    "prepMin": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Makhana",
+        "qty": 25,
+        "unit": "g",
+        "cost": 10
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      },
+      {
+        "name": "Chaat Masala",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Dry roast makhana, toss with oil, salt & chaat masala.",
+    "category": "grains",
+    "proteinSource": "Makhana",
+    "carbSource": "Makhana"
+  },
+  {
+    "id": 48,
+    "name": "Sundal (Bengal Gram)",
+    "type": "snack",
+    "diet": [
+      "veg",
+      "vegan"
+    ],
+    "tags": [
+      "high-protein",
+      "budget"
+    ],
+    "kcal": 190,
+    "protein": 11,
+    "carbs": 30,
+    "fat": 3,
+    "cost": 11,
+    "prepMin": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Bengal Gram",
+        "qty": 40,
+        "unit": "g",
+        "cost": 6
+      },
+      {
+        "name": "Coconut",
+        "qty": 10,
+        "unit": "g",
+        "cost": 2
+      },
+      {
+        "name": "Mustard Seeds",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      },
+      {
+        "name": "Curry Leaves",
+        "qty": 3,
+        "unit": "leaves",
+        "cost": 1
+      },
+      {
+        "name": "Oil",
+        "qty": 1,
+        "unit": "tsp",
+        "cost": 2
+      }
+    ],
+    "recipe": "Boil gram. Temper mustard & curry leaves, toss with gram & coconut.",
+    "category": "legumes",
+    "proteinSource": "Bengal Gram",
+    "carbSource": "Bengal Gram"
+  },
+  {
+    "id": 49,
+    "name": "Egg Salad Sandwich",
+    "type": "snack",
+    "diet": [
+      "nonveg"
+    ],
+    "tags": [
+      "high-protein"
+    ],
+    "kcal": 300,
+    "protein": 16,
+    "carbs": 30,
+    "fat": 13,
+    "cost": 22,
+    "prepMin": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 14
+      },
+      {
+        "name": "Bread",
+        "qty": 2,
+        "unit": "slices",
+        "cost": 8
+      }
+    ],
+    "recipe": "Boil & mash eggs, season, sandwich between bread slices.",
+    "category": "eggs",
+    "proteinSource": "Eggs",
+    "carbSource": "Bread"
+  },
+  {
+    "id": 50,
+    "name": "Papad & Yogurt Bowl",
+    "type": "snack",
+    "diet": [
+      "veg"
+    ],
+    "tags": [
+      "budget",
+      "light"
+    ],
+    "kcal": 170,
+    "protein": 7,
+    "carbs": 22,
+    "fat": 6,
+    "cost": 9,
+    "prepMin": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "Papad",
+        "qty": 2,
+        "unit": "pcs",
+        "cost": 4
+      },
+      {
+        "name": "Curd",
+        "qty": 100,
+        "unit": "g",
+        "cost": 5
+      },
+      {
+        "name": "Salt",
+        "qty": 1,
+        "unit": "pinch",
+        "cost": 0
+      }
+    ],
+    "recipe": "Roast or fry papads. Serve with seasoned curd.",
+    "category": "dairy",
+    "proteinSource": "Curd",
+    "carbSource": "Papad"
+  }
+]

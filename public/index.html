@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlatePilot — NutriNinja Cup</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🍛</span>
+      <div>
+        <h1>PlatePilot</h1>
+        <p>Budget-aware meal plans for hostel life</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="btnHistory" class="ghost" type="button">Saved Plans</button>
+      <button id="btnExport" class="ghost" type="button">Export PDF</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- INTAKE FORM -->
+    <section class="panel form-panel">
+      <h2>Student Budget & Macro Profiler</h2>
+      <form id="profilerForm">
+        <label>
+          Daily Food Budget (₹)
+          <input type="number" id="budget" min="40" max="500" value="120" required />
+        </label>
+
+        <div class="budget-chips">
+          <button type="button" class="chip" data-budget="100">₹100/day</button>
+          <button type="button" class="chip active" data-budget="120">₹120/day</button>
+          <button type="button" class="chip" data-budget="150">₹150/day</button>
+        </div>
+
+        <label>
+          Dietary Preference
+          <select id="diet">
+            <option value="veg">Vegetarian</option>
+            <option value="nonveg" selected>Non-Veg</option>
+            <option value="vegan">Vegan</option>
+          </select>
+        </label>
+
+        <label>
+          Fitness Goal
+          <select id="goal">
+            <option value="loss">Weight Loss</option>
+            <option value="gain">Muscle Gain</option>
+            <option value="maintain">Maintenance</option>
+            <option value="highprotein" selected>High Protein</option>
+          </select>
+        </label>
+
+        <label>
+          Days
+          <select id="days">
+            <option value="1">1 day</option>
+            <option value="7" selected>7 days (weekly)</option>
+          </select>
+        </label>
+
+        <label class="full">
+          Pantry Leftovers <span class="hint">(comma-separated — we'll prioritize these)</span>
+          <input type="text" id="pantry" placeholder="e.g. Rice, Eggs, Toor Dal, Peanut Butter" />
+        </label>
+
+        <button type="submit" id="btnGenerate" class="primary full">Generate Budget Diet Plan</button>
+      </form>
+
+      <div class="price-slider">
+        <label for="priceAdj">Regional price adjustment: <span id="priceAdjVal">0%</span></label>
+        <input type="range" id="priceAdj" min="-20" max="30" value="0" />
+      </div>
+    </section>
+
+    <!-- PLAN OUTPUT -->
+    <section class="panel plan-panel">
+      <div id="planEmpty" class="empty">
+        <p>👆 Set your budget and goals, then hit <strong>Generate</strong>.</p>
+        <p class="hint">Demo: ₹120 · High Protein · Non-Veg → ~2,200 kcal plan</p>
+      </div>
+
+      <div id="planContent" hidden>
+        <div class="plan-header">
+          <div>
+            <h2 id="planTitle">Your Meal Plan</h2>
+            <p id="planMeta" class="hint"></p>
+          </div>
+          <div class="cost-meter">
+            <div class="cost-ring">
+              <strong id="costSpent">₹0</strong>
+              <span>of <span id="costBudget">₹120</span></span>
+            </div>
+            <div class="cost-bar"><div id="costFill"></div></div>
+          </div>
+        </div>
+
+        <div class="totals-grid" id="totalsGrid">
+          <div class="stat kcal"><span>Calories</span><strong id="tKcal">0</strong><em id="tKcalTarget"></em></div>
+          <div class="stat protein"><span>Protein</span><strong id="tProtein">0g</strong><em id="tProteinTarget"></em></div>
+          <div class="stat carbs"><span>Carbs</span><strong id="tCarbs">0g</strong><em id="tCarbsTarget"></em></div>
+          <div class="stat fat"><span>Fats</span><strong id="tFat">0g</strong><em id="tFatTarget"></em></div>
+        </div>
+
+        <div class="day-tabs" id="dayTabs"></div>
+
+        <div class="meals-grid" id="mealsGrid"></div>
+
+        <div class="charts-row">
+          <div class="chart-card">
+            <h3>Macro Distribution</h3>
+            <canvas id="macroChart"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>vs RDA Targets</h3>
+            <canvas id="targetChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GROCERY -->
+  <section class="panel grocery-panel" id="groceryPanel" hidden>
+    <div class="grocery-header">
+      <h2>🧾 Smart Grocery Shopping List</h2>
+      <div>
+        <span id="groceryTotal" class="badge"></span>
+        <button id="btnPantryMode" class="ghost small" type="button">Highlight pantry items</button>
+      </div>
+    </div>
+    <div id="groceryGrid" class="grocery-grid"></div>
+  </section>
+
+  <!-- MESS MODE -->
+  <section class="panel mess-panel">
+    <h2>🏠 Hostel Mess Alternative Mode</h2>
+    <p class="hint">Enter what your mess serves today — we'll tell you what to pick inside & what to buy outside.</p>
+    <div class="mess-form">
+      <input type="text" id="messInput" placeholder="e.g. Idli Sambar, Rice Dal, Curd Rice (comma-separated)" />
+      <button type="button" id="btnMess" class="primary">Analyze Mess</button>
+    </div>
+    <div id="messResult" hidden></div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="panel community-panel">
+    <h2>💬 Community Budget Recipe Board</h2>
+    <form id="communityForm" class="community-form">
+      <input type="text" id="cTitle" placeholder="Recipe name" required />
+      <input type="number" id="cCost" placeholder="₹ cost" min="1" required />
+      <input type="text" id="cDesc" placeholder="How to make it (hostel-friendly)" required />
+      <button type="submit" class="primary">Share</button>
+    </form>
+    <div id="communityFeed" class="community-feed"></div>
+  </section>
+
+  <!-- SWAP MODAL -->
+  <div id="swapModal" class="modal" hidden>
+    <div class="modal-card">
+      <h3>Swap Meal</h3>
+      <p id="swapHint" class="hint"></p>
+      <div id="swapOptions"></div>
+      <button type="button" id="swapCancel" class="ghost">Cancel</button>
+    </div>
+  </div>
+
+  <!-- HISTORY MODAL -->
+  <div id="historyModal" class="modal" hidden>
+    <div class="modal-card">
+      <h3>Saved Plans (localStorage)</h3>
+      <div id="historyList"></div>
+      <button type="button" id="historyClose" class="ghost">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    PlatePilot · NutriNinja Cup Hackathon · Knapsack-optimized hostel nutrition
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
