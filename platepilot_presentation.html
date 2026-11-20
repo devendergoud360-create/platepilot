@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlatePilot — NutriNinja Cup Presentation</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: #111; color: #f0f0f0; }
+    .slide { min-height: 100vh; padding: 48px 64px; display: flex; flex-direction: column; justify-content: center; border-bottom: 2px solid #333; }
+    .slide h1 { font-size: 2.6rem; color: #ff8a3d; margin-bottom: 16px; }
+    .slide h2 { font-size: 2.1rem; color: #ff8a3d; margin-bottom: 20px; }
+    .slide p, .slide li { font-size: 1.35rem; line-height: 1.6; color: #e0e0e0; max-width: 1100px; }
+    .slide ul { margin-left: 28px; margin-top: 12px; }
+    .slide li { margin-bottom: 10px; }
+    .muted { color: #9aa; font-size: 1.1rem; }
+    .tag { display: inline-block; background: #2a2a2a; border: 1px solid #555; padding: 4px 10px; border-radius: 6px; margin: 4px 4px 4px 0; font-size: 1rem; }
+    a { color: #6bcBff; }
+    .title { text-align: center; }
+    .title h1 { font-size: 3.5rem; }
+    .title p { margin: 0 auto; }
+    @media print { .slide { page-break-after: always; min-height: auto; padding: 40px; } }
+  </style>
+</head>
+<body>
+
+<section class="slide title">
+  <h1>🍛 PlatePilot</h1>
+  <h2 style="color:#e0e0e0;">NutriNinja Cup</h2>
+  <p class="muted" style="margin-top:24px;">Budget-aware meal planning for college & hostel students</p>
+  <p style="margin-top:32px;"><a href="https://hanmanthmarkanti-ux.github.io/platepilot/">Live Demo</a> · <a href="https://github.com/hanmanthmarkanti-ux/platepilot">GitHub Repo</a></p>
+</section>
+
+<section class="slide">
+  <h2>Problem</h2>
+  <ul>
+    <li>Students on ₹100–₹150/day often rely on noodles/fast food → nutritional deficiencies.</li>
+    <li>Most nutrition apps assume expensive groceries, exotic items, and full kitchens.</li>
+    <li>No easy tool to plan balanced meals using <strong>local staples</strong> within a strict daily budget.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Solution — PlatePilot</h2>
+  <ul>
+    <li>Generates <strong>budget-constrained, nutritionally balanced</strong> daily/weekly meal plans.</li>
+    <li>Knapsack-style optimization maximizes nutrition (protein focus) while staying under ₹ cap.</li>
+    <li>Hostel-friendly recipes with clear costs and simple cooking steps.</li>
+    <li>Works as a <strong>fully client-side web app</strong> (GitHub Pages) with optional Node/Express backend.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Core Features</h2>
+  <ul>
+    <li><strong>Profiler:</strong> daily budget (₹), diet (Veg/Non-Veg/Vegan), goal (Loss/Gain/Maintenance/High Protein).</li>
+    <li><strong>Meal Plan Generator:</strong> breakfast, lunch, snack, dinner + smart top-ups within budget.</li>
+    <li><strong>Macro Visualizer:</strong> Chart.js doughnut + bars vs RDA targets.</li>
+    <li><strong>Cost Breakdown:</strong> per-meal ingredient costs + recipes.</li>
+    <li><strong>Grocery List:</strong> categorized weekly list, estimated spend, pantry highlights.</li>
+    <li><strong>Meal Swap:</strong> one-click nutritionally similar alternatives.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Extras / Stretch</h2>
+  <ul>
+    <li>🏠 Hostel Mess Alternative Mode: best picks + outside supplements.</li>
+    <li>🥫 Pantry leftover prioritization.</li>
+    <li>🖨 PDF export via browser print.</li>
+    <li>💬 Community budget recipe board (localStorage).</li>
+    <li>📜 Saved plans history (localStorage).</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Tech Stack</h2>
+  <p>
+    <span class="tag">HTML5/CSS3</span>
+    <span class="tag">Vanilla JS (ES Modules)</span>
+    <span class="tag">Chart.js</span>
+    <span class="tag">Node.js + Express</span>
+    <span class="tag">JSON dataset (50 recipes)</span>
+    <span class="tag">GitHub Pages</span>
+  </p>
+  <ul style="margin-top:24px;">
+    <li>Optimization in-browser for static hosting; optional REST API for server mode.</li>
+    <li>Codebase: <code>/root/platepilot</code> with <code>public/</code>, <code>client/</code> static build, <code>server.js</code>.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Demo Flow</h2>
+  <ol style="margin-left:28px; font-size:1.35rem; line-height:1.7;">
+    <li>Set <strong>₹120/day</strong>, <strong>Non-Veg</strong>, <strong>High Protein</strong> → Generate.</li>
+    <li>Show plan cards, cost meter, and macro charts (doughnut + targets).</li>
+    <li>Use <strong>Swap</strong> on one meal → totals update.</li>
+    <li>Open <strong>Grocery list</strong> and <strong>Mess mode</strong> demo.</li>
+    <li>Mention Saved Plans and Print/PDF export.</li>
+  </ol>
+</section>
+
+<section class="slide">
+  <h2>Example Output (typical)</h2>
+  <ul>
+    <li>₹120/day High Protein (Non-Veg): approx <strong>~2.2k kcal</strong>, <strong>~90–100g protein</strong>, cost near ₹118.</li>
+    <li>Plates built from affordable staples (dal, eggs, soya, chana, rice/roti, curd/milk extras).</li>
+    <li>Optimization favors protein-per-rupee and calorie top-ups to meet targets within budget.</li>
+  </ul>
+</section>
+
+<section class="slide title">
+  <h2>Links</h2>
+  <p style="font-size:1.5rem; margin-top:12px;">🌐 Live: <a href="https://hanmanthmarkanti-ux.github.io/platepilot/">hanmanthmarkanti-ux.github.io/platepilot</a></p>
+  <p style="font-size:1.5rem; margin-top:12px;">💻 Repo: <a href="https://github.com/hanmanthmarkanti-ux/platepilot">github.com/hanmanthmarkanti-ux/platepilot</a></p>
+  <p class="muted" style="margin-top:32px;">Run locally: <code>cd /root/platepilot && npm start</code></p>
+</section>
+
+</body>
+</html>
