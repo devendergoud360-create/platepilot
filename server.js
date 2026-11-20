@@ -8,6 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Embed recipe dataset for the browser (works with module app.js)
+app.get('/data.js', (req, res) => {
+  const data = fs.readFileSync(path.join(__dirname, 'data', 'recipes.json'), 'utf8');
+  res.type('application/javascript').send(`window.PLATEPILOT_RECIPES = ${data};\n`);
+});
+
 const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'recipes.json'), 'utf8'));
 
 // RDA targets by goal (approx for college-age males/females averaged)

@@ -1,4 +1,12 @@
-/* PlatePilot frontend */
+/* PlatePilot frontend — works with embedded engine (GitHub Pages / offline) */
+import {
+  GOAL_TARGETS,
+  generateMealPlan,
+  swapMeal,
+  analyzeMess,
+  buildGrocery,
+} from './platepilot-engine.js';
+
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 
@@ -8,13 +16,20 @@ const state = {
   macroChart: null,
   targetChart: null,
   priceAdj: 0,
+  recipes: [],
 };
 
 const SLOT_ORDER = ['breakfast', 'lunch', 'snack', 'dinner', 'extra'];
-const SLOT_LABEL = { breakfast: 'Breakfast', lunch: 'Lunch', snack: 'Snack', dinner: 'Dinner', extra: 'Top-up Extra' };
+const SLOT_LABEL = {
+  breakfast: 'Breakfast',
+  lunch: 'Lunch',
+  snack: 'Snack',
+  dinner: 'Dinner',
+  extra: 'Top-up Extra',
+};
 
-// ---------- Init ----------
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadRecipes();
   loadCommunity();
   bindForm();
   bindChips();
@@ -24,6 +39,29 @@ document.addEventListener('DOMContentLoaded', () => {
   bindPriceSlider();
   restoreLastPlan();
 });
+
+async function loadRecipes() {
+  // Prefer embedded data (works on GitHub Pages); fall back to server API.
+  if (window.PLATEPILOT_RECIPES?.length) {
+    state.recipes = window.PLATEPILOT_RECIPES;
+    return;
+  }
+  try {
+    const res = await fetch('./data/recipes.json');
+    if (res.ok) {
+      state.recipes = await res.json();
+      return;
+    }
+  } catch (_) {}
+  // last resort: server
+  try {
+    const res = await fetch('/api/recipes');
+    state.recipes = await res.json();
+  } catch (e) {
+    console.error('Failed to load recipes', e);
+    alert('Could not load recipe dataset.');
+  }
+}
 
 function bindChips() {
   $$('.chip').forEach((chip) => {
@@ -61,7 +99,6 @@ function bindTopbar() {
   });
 }
 
-// ---------- Generate ----------
 async function generatePlan() {
   const btn = $('#btnGenerate');
   btn.disabled = true;
@@ -76,14 +113,10 @@ async function generatePlan() {
       .map((s) => s.trim())
       .filter(Boolean);
 
-    const res = await fetch('/api/mealplan', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ budget, diet, goal, days, pantry }),
-    });
-    if (!res.ok) throw new Error((await res.json()).error || 'Request failed');
-    const data = await res.json();
+    // Simulate a short delay so the UI feedback is visible
+    await new Promise((r) => setTimeout(r, 250));
 
+    const data = generateMealPlan(state.recipes, { budget, diet, goal, days, pantry });
     state.plan = data;
     state.activeDay = 0;
     renderPlan();
@@ -98,13 +131,11 @@ async function generatePlan() {
 }
 
 function applyPriceAdjustmentToDisplay() {
-  // purely display-level regional price scaling on totals/cost badges
   if (!state.plan) return;
   const factor = 1 + state.priceAdj / 100;
   renderPlan(true, factor);
 }
 
-// ---------- Render plan ----------
 function renderPlan(priceOnly = false, factor = 1) {
   const plan = state.plan;
   if (!plan) return;
@@ -143,7 +174,6 @@ function renderPlan(priceOnly = false, factor = 1) {
   $('#tCarbsTarget').textContent = `/ ${t.carbs}g target`;
   $('#tFatTarget').textContent = `/ ${t.fat}g target`;
 
-  // Day tabs
   const tabs = $('#dayTabs');
   tabs.innerHTML = '';
   if (plan.week.length > 1) {
@@ -214,10 +244,8 @@ function renderMeals(day, factor) {
   }
 }
 
-// ---------- Charts ----------
 function renderCharts(day, targets) {
   const totals = day.totals;
-  // Convert grams to kcal for distribution
   const pK = totals.protein * 4;
   const cK = totals.carbs * 4;
   const fK = totals.fat * 9;
@@ -227,6 +255,8 @@ function renderCharts(day, targets) {
 
   if (state.macroChart) state.macroChart.destroy();
   if (state.targetChart) state.targetChart.destroy();
+
+  if (typeof Chart === 'undefined') return;
 
   Chart.defaults.color = '#8b9aab';
   Chart.defaults.borderColor = '#2d3844';
@@ -291,7 +321,6 @@ function renderCharts(day, targets) {
   });
 }
 
-// ---------- Swap ----------
 let swapContext = null;
 
 function openSwap(meal) {
@@ -305,29 +334,22 @@ function openSwap(meal) {
   const day = plan.week[state.activeDay];
   const avoidIds = day.meals.map((m) => m.id);
 
-  fetch('/api/swap', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
+  try {
+    const data = swapMeal(state.recipes, {
       mealId: meal.id,
       budget: plan.dailyBudget,
       diet: plan.diet,
       goal: plan.goal,
       avoidIds,
-    }),
-  })
-    .then((r) => r.json())
-    .then((data) => {
-      if (!data.swap) {
-        opts.innerHTML = '<p class="hint">No suitable alternative found.</p>';
-        return;
-      }
-      renderSwapOption(data.swap);
-      // also offer 2nd/3rd quick options by calling again without first swap? show one primary + manual
-    })
-    .catch(() => {
-      opts.innerHTML = '<p class="hint">Swap service error.</p>';
     });
+    if (!data.swap) {
+      opts.innerHTML = '<p class="hint">No suitable alternative found.</p>';
+      return;
+    }
+    renderSwapOption(data.swap);
+  } catch (err) {
+    opts.innerHTML = `<p class="hint">${escapeHtml(err.message)}</p>`;
+  }
 }
 
 function renderSwapOption(alt) {
@@ -350,7 +372,6 @@ function applySwap(alt) {
   const idx = day.meals.findIndex((m) => m.id === swapContext.id);
   if (idx >= 0) {
     const old = day.meals[idx];
-    // update totals
     day.totals.kcal += alt.kcal - old.kcal;
     day.totals.protein += alt.protein - old.protein;
     day.totals.carbs += alt.carbs - old.carbs;
@@ -358,26 +379,17 @@ function applySwap(alt) {
     day.totals.cost += alt.cost - old.cost;
     day.meals[idx] = { ...alt, pantryMatches: old.pantryMatches || [] };
   }
-  // Rebuild grocery after swap
-  refreshGroceryFromPlan();
+  const pantry = ($('#pantry')?.value || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  state.plan.grocery = buildGrocery(state.plan.week, pantry);
   $('#swapModal').hidden = true;
   renderPlan();
+  renderGrocery();
   savePlan(state.plan);
 }
 
-async function refreshGroceryFromPlan() {
-  try {
-    const res = await fetch('/api/grocery', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ week: state.plan.week }),
-    });
-    state.plan.grocery = await res.json();
-    renderGrocery();
-  } catch (_) {}
-}
-
-// ---------- Grocery ----------
 function renderGrocery() {
   const plan = state.plan;
   if (!plan || !plan.grocery) return;
@@ -408,9 +420,8 @@ function roundQty(n) {
   return Math.round(n * 10) / 10;
 }
 
-// ---------- Mess mode ----------
 function bindMess() {
-  $('#btnMess').addEventListener('click', async () => {
+  $('#btnMess').addEventListener('click', () => {
     const names = $('#messInput').value.split(',').map((s) => s.trim()).filter(Boolean);
     if (!names.length) return alert('Enter at least one mess dish');
     const budget = Number($('#budget').value) || 120;
@@ -418,13 +429,12 @@ function bindMess() {
     const goal = $('#goal').value;
     const messMenu = names.map((name) => ({ name, cost: estimateMessCost(name) }));
 
-    const res = await fetch('/api/mess', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messMenu, budget, diet, goal }),
-    });
-    const data = await res.json();
-    renderMess(data);
+    try {
+      const data = analyzeMess(messMenu, { budget, diet, goal }, state.recipes);
+      renderMess(data);
+    } catch (err) {
+      alert(err.message);
+    }
   });
 }
 
@@ -457,7 +467,6 @@ function renderMess(data) {
   `;
 }
 
-// ---------- Community ----------
 const COMM_KEY = 'platepilot_community';
 
 function bindCommunity() {
@@ -504,7 +513,6 @@ function loadCommunity() {
     .join('');
 }
 
-// ---------- Persistence ----------
 function savePlan(plan) {
   try {
     localStorage.setItem('platepilot_last_plan', JSON.stringify(plan));
@@ -570,7 +578,6 @@ function showHistory() {
   $('#historyModal').hidden = false;
 }
 
-// ---------- utils ----------
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;')
